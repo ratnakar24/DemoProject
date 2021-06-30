@@ -26,7 +26,7 @@ steps:
   displayName: 'mv $(Build.BinariesDirectory)/www $(System.DefaultWorkingDirectory)'
 
 - bash: | # Updating Java JDK version in Java home
-    sudo update-alternatives --config javac
+    sudo update-java-alternatives --set /usr/lib/jvm/adoptopenjdk-8-hotspot-amd64
   displayName: 'update-alternatives --config javac'
 
 

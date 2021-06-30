@@ -17,7 +17,7 @@ steps:
     definition: 'App Build CI'
     specificBuildWithTriggering: true
     buildVersionToDownload: 'specific'
-    runId: '$(TriggeredBuildIds)'
+    runId: '20210630.4'
     targetPath: '$(Build.BinariesDirectory)'
 
 # Moves the www folder containing bundle to the Default Working Directory path (e.g. /agent/_work/1/s)

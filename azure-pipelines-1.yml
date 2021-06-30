@@ -25,6 +25,11 @@ steps:
       mv $(Build.BinariesDirectory)/www $(System.DefaultWorkingDirectory)
   displayName: 'mv $(Build.BinariesDirectory)/www $(System.DefaultWorkingDirectory)'
 
+- bash: | # Updating Java JDK version in Java home
+    sudo update-alternatives --config javac
+  displayName: 'update-alternatives --config javac'
+
+
 - bash: | # Installing cordova
     sudo npm i -g cordova
   displayName: 'npm i -g cordova@latest'
